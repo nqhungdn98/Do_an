@@ -3,7 +3,7 @@ from tkinter import ttk
 import openpyxl
 
 def load_data():
-    path = "C:\Do_an_cuoi_khoa\people.xlsx"
+    path = "C:\Do_an_cuoi_khoa\Do_an\people.xlsx"
     workbook = openpyxl.load_workbook(path)
     sheet = workbook.active
 
@@ -25,7 +25,7 @@ def insert_row():
     print(ma_sv, name, year, gender, status)
 
     # Thêm dữ liệu vào Excel sheet
-    path = "C:\Do_an_cuoi_khoa\people.xlsx"
+    path = "C:\Do_an_cuoi_khoa\Do_an\people.xlsx"
     workbook = openpyxl.load_workbook(path)
     sheet = workbook.active
     row_values = [ma_sv, name, year, gender, status]
@@ -45,7 +45,7 @@ def insert_row():
     checkbutton.state(["!selected"])
 
 root = tk.Tk()
-root.title("phần mềm quản li sinh viên")
+root.title("PHẦN MỀM QUẢN LÍ SINH VIÊN")
 root.geometry("700x400")
 
 #Tạo màn hình đăng nhập
